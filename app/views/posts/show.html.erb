@@ -5,26 +5,13 @@
   <%= @post.name %>
 </p>
  
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
- 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
- 
-<p>
-  <b>Tags:</b>
-  <%=join_tags(@post)%>
-</p>
 
- 
-<h2>Comments</h2>
-<%= render :partial => "comments/comment",
-           :collection => @post.comments %>
- 
+
+ <div id="comments">
+
+<%= link_to "Comments",post_comments_path(@post), :remote =>true %>
+</div>
+
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>
  

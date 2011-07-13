@@ -1,0 +1,4 @@
+page.replace_html :bottom, :comments, :partial => 'comment', :collection => @post.comments
+
+page[:comment_form].reset
+

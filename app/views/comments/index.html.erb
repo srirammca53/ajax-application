@@ -1,0 +1,15 @@
+<h1>List of comments</h1>
+
+<table>
+  <tr>
+    <th>Commenter</th>
+    <th>Comment</th>
+
+  </tr>
+
+<% @post.comments.each do |comment| %>
+  <tr>
+    <td><%= comment.commenter %></td>
+    <td><%= comment.comment %></td>
+   </tr>
+<% end %>

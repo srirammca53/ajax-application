@@ -18,7 +18,7 @@ before_filter :authenticate, :except => [:index, :show]
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @post }
+      format.js
     end
   end
 
