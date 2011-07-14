@@ -27,10 +27,10 @@ def create
 
 def destroy
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.find(params[:comment_id])
+    @comment = @post.comments.find(params[:id])
     @comment.destroy
    respond_to do |format|
-      format.html 
+        format.html { redirect_to post_path(@post)} 
 
       format.js
     end

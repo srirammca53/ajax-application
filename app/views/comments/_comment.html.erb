@@ -8,8 +8,8 @@
   <b>Comment:</b>
   <%= comment.body %>
 </p>
-<p>
+<div id="class">
   <%= link_to 'Destroy Comment', [comment.post, comment],
                :confirm => 'Are you sure?',
                :method => :delete, :remote => true %>
-</p>
+</div>

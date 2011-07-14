@@ -1,1 +1,1 @@
-page.replace_html :bottom, :comments, :partial => 'comment', :collection => @post.comments
+page.replace_html  :class, :partial => 'comment', :collection => @post.comments
